@@ -2,34 +2,34 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "1fd75e72",
+   "id": "bc0bc3ca",
    "metadata": {
-    "_cell_guid": "8bc8aed1-3e4c-4737-acbf-0d0c7d2fc45a",
-    "_uuid": "94edb215-f6f6-408e-b53d-b537a2d2df25",
-    "collapsed": false,
-    "jupyter": {
-     "outputs_hidden": false
-    },
+    "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
+    "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "papermill": {
-     "duration": 0.001443,
-     "end_time": "2025-12-14T06:01:44.153514",
+     "duration": 0.001515,
+     "end_time": "2025-12-14T06:05:33.721952",
      "exception": false,
-     "start_time": "2025-12-14T06:01:44.152071",
+     "start_time": "2025-12-14T06:05:33.720437",
      "status": "completed"
     },
     "tags": []
    },
    "source": [
-    "# This R environment comes with many helpful analytics packages installed\n",
-    "# It is defined by the kaggle/rstats Docker image: https://github.com/kaggle/docker-rstats\n",
-    "# For example, here's a helpful package to load\n",
+    "# This Python 3 environment comes with many helpful analytics libraries installed\n",
+    "# It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python\n",
+    "# For example, here's several helpful packages to load\n",
     "\n",
-    "library(tidyverse) # metapackage of all tidyverse packages\n",
+    "import numpy as np # linear algebra\n",
+    "import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)\n",
     "\n",
     "# Input data files are available in the read-only \"../input/\" directory\n",
     "# For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory\n",
     "\n",
-    "list.files(path = \"../input\")\n",
+    "import os\n",
+    "for dirname, _, filenames in os.walk('/kaggle/input'):\n",
+    "    for filename in filenames:\n",
+    "        print(os.path.join(dirname, filename))\n",
     "\n",
     "# You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using \"Save & Run All\" \n",
     "# You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session"
@@ -44,37 +44,53 @@
      "databundleVersionId": 14708861,
      "sourceId": 124849,
      "sourceType": "competition"
+    },
+    {
+     "datasetId": 9017212,
+     "sourceId": 14148674,
+     "sourceType": "datasetVersion"
+    },
+    {
+     "isSourceIdPinned": true,
+     "modelId": 533280,
+     "modelInstanceId": 518760,
+     "sourceId": 683654,
+     "sourceType": "modelInstanceVersion"
     }
    ],
    "isGpuEnabled": true,
    "isInternetEnabled": true,
-   "language": "r",
+   "language": "python",
    "sourceType": "notebook"
   },
   "kernelspec": {
-   "display_name": "R",
-   "language": "R",
-   "name": "ir"
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
   },
   "language_info": {
-   "codemirror_mode": "r",
-   "file_extension": ".r",
-   "mimetype": "text/x-r-source",
-   "name": "R",
-   "pygments_lexer": "r",
-   "version": "4.4.0"
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.13"
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 4.050128,
-   "end_time": "2025-12-14T06:01:44.274413",
+   "duration": 6.142709,
+   "end_time": "2025-12-14T06:05:37.322300",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2025-12-14T06:01:40.224285",
-   "version": "2.6.0"
+   "start_time": "2025-12-14T06:05:31.179591",
+   "version": "2.5.0"
   }
  },
  "nbformat": 4,
